@@ -8,7 +8,7 @@ pipeline {
 	     }
 	stage ("BUILD THE CODE") {
 	  steps {
-	    sh "mvn clean test install"
+	    sh "mvn clean test package"
 	    }
 	    }
 
