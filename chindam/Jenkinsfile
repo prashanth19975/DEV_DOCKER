@@ -8,7 +8,7 @@ pipeline {
 	     }
 	stage ("BUILD THE CODE") {
 	  steps {
-	    sh /chindam" mvn clean test package"
+	    sh " mvn clean test package"
 	    }
 	    }
 
