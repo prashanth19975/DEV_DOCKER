@@ -3,6 +3,7 @@ pipeline {
 	environment {
 		USER_NAME="prashanth"
 		USER_ID = 4
+		USER_PATH="/home/prashanth"
 		}
       stages {
         stage ("GIT CHECKOUT"){
@@ -20,7 +21,9 @@ pipeline {
 		      steps {
 			      echo "CURRENT_USER=${env.USER_NAME}"
 			      sh "echo USER_NAME= ${env.USER_ID} type:${env.USER_ID.class}"
-		      }
+			      echo "Curent user path ${env.USER_PATH}"
+		      }   
+		      
 	      }
 	 }
  }	 
