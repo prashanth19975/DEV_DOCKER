@@ -6,7 +6,9 @@ pipeline {
 	      git branch: 'main', url: 'https://github.com/prashanth19975/Deploy-to-docker-container.git'
 	     }
 	     }
-	
+	      stage("env") {
+		      steps {
+			      echo "BUILD_NUMBER = ${env.BUILD_NUMBER}"   
 
 	 }
  }	 
