@@ -19,7 +19,7 @@ pipeline {
 	      stage("env1") {
 		      steps {
 			      echo "CURRENT_USER=${env.USER_NAME}"
-			      sh "echo USER_NAME= ${env.USER_ID} (type: ${env.USER_ID.class})"
+			      sh "echo USER_NAME= ${env.USER_ID} (type: ${env.USER_ID.class}"
 		      }
 	      }
 	 }
