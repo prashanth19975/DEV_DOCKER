@@ -1,5 +1,8 @@
 pipeline {
    agent any
+	environment {
+		USER_NAME="prashanth"
+		USER_ID= 42
       stages {
         stage ("GIT CHECKOUT"){
 	  steps {
