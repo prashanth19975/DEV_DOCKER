@@ -2,7 +2,7 @@ pipeline {
    agent any
 	environment {
 		USER_NAME="prashanth"
-		USER_ID= 4
+		USER_ID = 4
 		}
       stages {
         stage ("GIT CHECKOUT"){
@@ -18,8 +18,8 @@ pipeline {
 			      }
 	      stage("env1") {
 		      steps {
-			      echo "CURRENT_USER=${env.CURRENT_USER}"
-			      sh "CURRENT_USER= $CURRENT_USER" (type: ${env.USER_ID.class})
+			      echo "CURRENT_USER=${env.USER_NAME}"
+			      sh "echo USER_NAME= $USER_NAME" (type: ${env.USER_ID.class})
 		      }
 	      }
 	 }
