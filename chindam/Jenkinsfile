@@ -16,6 +16,7 @@ pipeline {
 		      steps {
 			      echo "CURRENT_USER=${env.CURRENT_USER}"
 			      sh "CURRENT_USER= $CURRENT_USER"
-
+		      }
+	      }
 	 }
  }	 
