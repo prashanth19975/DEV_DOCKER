@@ -6,11 +6,7 @@ pipeline {
 	      git branch: 'main', url: 'https://github.com/prashanth19975/Deploy-to-docker-container.git'
 	     }
 	     }
-	stage ("BUILD THE CODE") {
-	  steps {
-	    sh " mvn clean test package"
-	    }
-	    }
+	
 
 	 }
  }	 
