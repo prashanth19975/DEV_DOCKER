@@ -12,6 +12,10 @@ pipeline {
 			      sh "echo BUILD_NUMBER = $BUILD_NUMBER"
 			      }
 			      }
+	      stage("env1") {
+		      steps {
+			      echo "CURRENT_USER=${env.CURRENT_USER}"
+			      sh "CURRENT_USER= $CURRENT_USER"
 
 	 }
  }	 
